@@ -8,7 +8,8 @@ import {ROUTES} from './app.routes'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { AbountComponent } from './abount/abount.component'
+import { AbountComponent } from './abount/abount.component';
+import { RestaurantsComponent } from './restaurants/restaurants.component'
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AbountComponent } from './abount/abount.component'
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    AbountComponent
+    AbountComponent,
+    RestaurantsComponent
   ],
   imports: [
     BrowserModule,
