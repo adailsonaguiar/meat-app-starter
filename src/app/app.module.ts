@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import {ROUTES} from './app.routes'
+import { ROUTES } from './app.routes'
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { AbountComponent } from './abount/abount.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { RestaurantComponent } from './restaurants/restaurant/restaurant.component'
+import { RestaurantService } from './restaurants/restaurant/restaurant.services'
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import { RestaurantComponent } from './restaurants/restaurant/restaurant.compone
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [
+    RestaurantService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
