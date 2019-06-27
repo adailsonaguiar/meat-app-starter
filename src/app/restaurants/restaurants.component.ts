@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Restaurant } from './restaurant/restaurant.model'
-import { RestaurantService } from './restaurant/restaurant.services';
+import { Restaurant } from './restaurant/restaurant.model';
+import { RestaurantsService } from './restaurants.services';
 
 @Component({
   selector: 'mt-restaurants',
@@ -10,7 +10,7 @@ export class RestaurantsComponent implements OnInit {
 
   restaurants: Restaurant[]
 
-  constructor(private restaurantService: RestaurantService) { }
+  constructor(private restaurantService: RestaurantsService) { }
 
   ngOnInit() {
     this.restaurantService.restaurants().subscribe(restaurants => this.restaurants = restaurants)

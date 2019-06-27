@@ -1,14 +1,14 @@
-import { Restaurant } from './restaurant.model'
-import { MEAT_API } from '../../app.api'
+import { Restaurant } from './restaurant/restaurant.model'
+import { MEAT_API } from '../app.api'
 import { Http } from '@angular/http'
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/catch'
-import { ErrorHandler } from '../../app.error-handler'
+import { ErrorHandler } from '../app.error-handler'
 
 @Injectable()
-export class RestaurantService {
+export class RestaurantsService {
 
     constructor(private http: Http) { }
 
@@ -17,4 +17,6 @@ export class RestaurantService {
             .map(response => response.json())
             ._catch(ErrorHandler.handleError)
     }
+
+  
 }
