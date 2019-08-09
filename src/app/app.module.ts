@@ -18,6 +18,7 @@ import { CarrinhoComponent } from './restaurant-detail/carrinho/carrinho.compone
 import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 import { CarrinhoService } from './restaurant-detail/carrinho/carrinho.service';
+import { OrderComponent } from './order/order.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { CarrinhoService } from './restaurant-detail/carrinho/carrinho.service';
     MenuComponent,
     CarrinhoComponent,
     MenuItemComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
