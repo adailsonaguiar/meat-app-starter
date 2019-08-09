@@ -1,5 +1,6 @@
 # Meat - Angular App Starter
  <img title="Feed" src="https://raw.githubusercontent.com/adailsonaguiar/meat-app-starter/master/screen/Screenshot_20190809_152642.png"> 
+ 
 ## 1. Passos para começar
 
 ### É necessário executar a API responsável pelo armazenamento e disponibilização dos dados.
