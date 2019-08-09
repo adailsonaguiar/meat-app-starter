@@ -19,4 +19,16 @@ export class CarrinhoComponent implements OnInit {
   total(): number {
     return this.carrinhoService.total()
   }
+
+  clear() {
+    this.carrinhoService.clear()
+  }
+
+  removeItem(item: any) {
+    this.carrinhoService.removeItem(item)
+  }
+
+  addItem(item: any) {
+    this.carrinhoService.addItem(item)
+  }
 }
